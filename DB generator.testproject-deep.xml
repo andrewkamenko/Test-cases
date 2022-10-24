@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="217" name="Smoke тесты" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="218" name="Установка программы (достаточно места на диске)">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[100]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Установка программы (достаточно места на диске)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Установка в папку, стандартную для программ - C:\Program Files (x86) для 32-битных программ или C:\Program Files&nbsp;для 64-битных программ.</p>
+
+<p>Сервер запущен.</p>
+
+<p>Места на диске хватает - более 50 ГБ.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Нажать на иконку установщика&nbsp;DBGenerator.exe</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Открывается окно установщика с выбором директории установки</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>В окне проверить путь программы -&nbsp;C:\Program Files (x86)\DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В поле Destination Folder выбран путь&nbsp;C:\Program Files (x86)\DBGenerator</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Проверить, чтобы на диске хватало места для установки программы</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В окне установки программы присутствует надпись, которая указывает, сколько места необходимо программе и сколько есть на диске</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Нажать кнопку [Next&gt;]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопка нажимается и происходит переход на следующий шаг</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Проверить возможность выбора компонентов программы с помощью&nbsp;Checkbox</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Присутствует окно, в котором предлагается с помощью Checkbox выбрать необходимые компоненты программы</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Выбрать Checkbox с DBGenerator</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Checkbox DBGenerator выбрался</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Нажать кнопку [Install]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Началась установка программы</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>После установки программы нажать кноку [Close]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окно установщика закроется</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="224" name="Установка программы (недостаточно места на диске)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[103]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="220" name="Запуск программы и генерация таблиц Patient и Work List">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[101]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="222" name="Проверка связи программы с БД">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[102]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="2" name="Установка программы" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="9" name="Установка программы по пути, который предлагается инсталлятором">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="201" name="Установка программы по пути отличного от предложенного инсталлятором">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[94]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="11" name="Установка с правами Администратора">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="203" name="Установка без прав Администратора">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[95]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="31" name="Подсчет программой свободного места на диске при установке">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="33" name="Установка программы поверх уже установленной">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="35" name="Восстановление процесса установки при внезапном прерывании">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="37" name="Возможность установки в корень диска с OС">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="45" name="Возможность установки в папку с ОС">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="39" name="Возможность установки в корень диска без ОС">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="41" name="Возможность откатить установку">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="43" name="Одновременный запуск нескольких инсталляторов">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="182" name="Установка при запущенных других приложениях">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[85]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+<testsuite id="51" name="Проверка установки на разных ОС" >
+<node_order><![CDATA[13]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="17" name="Установка программы на Windows 11">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="15" name="Установка программы на Windows 8x32">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="23" name="Установка программы на Windows 8x64">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="21" name="Установка программы на Windows 10x64">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="13" name="Установка программы на Windows 10x32">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="25" name="Установка программы на Windows 7x64">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="19" name="Установка программы на Windows 7x32">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="52" name="После установки" >
+<node_order><![CDATA[14]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="55" name="Наличие записей в реестре">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="53" name="Совпадение выбранного пути установки и фактического">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="59" name="Проверить название папок">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="57" name="Наличие ярлыков + сами иконки, названия">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite></testsuite><testsuite id="86" name="Открытие программы" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="95" name="Открыть программу с правами Администратора">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="205" name="Открыть программу без прав Администратора">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[96]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="87" name="Открыть программу с помощью ярлыка">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="89" name="Открыть программу из папки установки">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="91" name="Открыть программу из меню Пуск">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="207" name="Открыть программу с помощью окна Выполнить">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[97]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="97" name="Открыть программу под другим пользователем">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="178" name="Работа с несколькими запущенными программами ОС">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[83]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="180" name="Запуск нескольких копий программы">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[84]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="188" name="Запуск программы без подключения к БД">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[88]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="3" name="Интерфейс программы" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="215" name="Всё окно программы" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="170" name="Проверить локализацию программы">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[79]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверить локализацию программы</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Проверить правильность всех&nbsp;надписей, текста в кнопках, сообщений программы на английском языке</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Написание всех элементов соответствует&nbsp;правилам английского языка</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="209" name="Проверить интернационализацию программы">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[98]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="261" name="Проверить UI программы">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[110]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="82" name="Проверить граничные размеры окна программы при сжатии">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="213" name="Проверить работоспособность стандартных кнопок ОС(свернуть, развернуть, закрыть) + название">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[99]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="103" name="Если окно завести за область экрана, то как оно будет себя вести при следующем запуске">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="119" name="Горизонтальная и вертикальная прокрутка внутри областей с данными">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="176" name=" Внезапное прерывание работы приложения во время создания таблицы">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[82]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="186" name="Возможность вставки текста в таблицы">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[87]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="152" name="Проверить возможность растягивать столбцы">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[70]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Проверить возможность растягивать столбцы</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Проверка распространяется на следующие столбцы:</p>
+
+<ol>
+	<li>ID пациента</li>
+	<li>Фамилия</li>
+	<li>Имя</li>
+	<li>Отчество</li>
+	<li>Дата рождения</li>
+	<li>Пол</li>
+	<li>Адрес</li>
+	<li>Доп. информация</li>
+	<li>Место работы</li>
+	<li>ID пациента №2</li>
+	<li>Модальность</li>
+	<li>AEtitle</li>
+	<li>Состояние</li>
+	<li>Описание</li>
+	<li>Дата добавления</li>
+	<li>Время добавления</li>
+	<li>Дата процедуры</li>
+	<li>Исполнит. врач</li>
+	<li>Направ. врач</li>
+	<li>Запрос. врач</li>
+</ol>
+
+<p>Программа запущена. Таблицы сгенерированы</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Растянуть первый столбец&nbsp;из списка за шапку</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Столбец растягивается</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="115" name="Возможность выделить всех пациентов, скопировать и вставить в любой документ">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="107" name="Проверить &quot;перетаскиваемость&quot; столбцов">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="109" name="Возможность изменения порядка пациентов путем перетаскивания">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="211" name="Patient List" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="250" name="Поле Patient count + влияние на сценарий срабатывания кнопки Add Patient" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="251" name="Проверить поле Patient count корректными целыми значениями (1-999999999)">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[105]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверить поле Patient count корректными целыми значениями (1-999999999)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Под корректными целыми значениями принимаем числа,&nbsp;которые влазят в поле по ширине - числа от 1 и&nbsp;до 999999999 включительно.</p>
+
+<p>Программа открыта. Соединение с БД установлено.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле Patient Count число из промежутка 1-99999999</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окон с ошибкой не появилось. Красной обводки вокруг поля не появилось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Нажать [Add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В таблице сгенерировались пациенты, количество которых соответсвтует&nbsp;введенному числу. Окон с ошибкой не появилось. Красной обводки вокруг поля не появилось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле Patient Count еще одно число число из промежутка 1-99999999. которое не повторяется с первым введенным числом</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окон с ошибкой не появилось. Красной обводки вокруг поля не появилось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Нажать [Add Patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В таблице сгенерировались лополнительные пациенты, количество которых соответсвтует&nbsp;введенному числу. Окон с ошибкой не появилось. Красной обводки вокруг поля не появилось</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="255" name="Проверить поле Patient count целыми отрицательными значениями (-999999999-(-1))">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[107]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="273" name="Проверить поле Patient count дробными положительными числами (с . и ,)">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[116]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="275" name="Проверить поле Patient count дробными отрицательными числами (с . и ,)">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[117]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="253" name="Проверить поле Patient count вписав 0">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[106]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="257" name="Оставить поле Patient count пустым">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[108]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="259" name="Проверить поле Patient count на максимальное количество символов (цифр)">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[109]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверить поле Patient count на максимальное количество символов (цифр)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Програма открыта. Соединение с БД установлено</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Заполнить поле Patient count количеством символов, которое превышает ширину поля (свыше 9 символов)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Ширина поля сохраняется. Прошлые значения сдвигаются влево, курсор остается виден.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Заполнить поле Patient count 256 символами</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появлется красная обводка вокруг поля ввода. Появлется сообщение, что превышено максимальное количество введенных символов</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="263" name="Проверить поле Patient count спецсимволами">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[111]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверить поле Patient count на спецсимволы</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Спецсимволы - `~!@#№$;%^:&amp;?*()-_=+\|/,.&lt;&gt;&#39;{}[]&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="265" name="Проверить поле Patient count на кириллические символы">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[112]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="267" name="Проверить поле Patient count на латинские символы">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[113]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="269" name="Проверить поле Patient count на возможность вставки текста из буфера обмена">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[114]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="271" name="Проверить поле Patient count на возможность вставки файлов из буфера обмена">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[115]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="324" name="Кнопка Add Patient" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="325" name="Проверить работоспособность кнопки">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[140]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Проверить работоспособность кнопки Add Patient</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Программа открыта. Связь с БД установлена</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Ввести в поле Patient count количество пациентов, к примеру, 20</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Поле Patient Count станет активным. В нем будет введена цифра 20</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Нажать кнопку [Add patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>В таблице&nbsp;Patient сгенерируется 20 пациентов. В строке состояния будет соответствующая этому действию надпись</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="327" name="Проверить быстрое двойное нажатие на кнопку">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[141]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="329" name="Кнопка Update Patient" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="330" name="Проверить работоспособность кнопки">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[142]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite></testsuite><testsuite id="212" name="Work List" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="277" name="Поле WorkList Count + влияние на сценарий срабатывания кнопки Add Worklist" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="278" name="Проверить поле Worklist count корректными целыми значениями (1-999999999)">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[118]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="280" name="Проверить поле WorkList count целыми отрицательными значениями (-999999999-(-1))">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[119]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="282" name="Проверить поле WorkList count дробными положительными числами (с . и ,)">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[120]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="284" name="Проверить поле WorkList count дробными отрицательными числами (с . и ,)">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[121]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="286" name="Проверить поле WorkList count вписав 0">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[122]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="288" name="Оставить поле WorkList count пустым">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[123]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="290" name="Проверить поле WorkList count на максимальное количество символов (цифр)">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[124]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="292" name="Проверить поле WorkList count спецсимволами">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[125]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="294" name="Проверить поле WorkList count на кириллические символы">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[126]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="296" name="Проверить поле WorkList count на латинские символы">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[127]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="298" name="Проверить поле WorkList count на возможность вставки текста из буфера обмена">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[128]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="300" name="Проверить поле WorkList count на возможность вставки файлов из буфера обмена">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[129]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="305" name="Поле AE Title + влияние на сценарий срабатывания кнопки Add Worklist" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="308" name="Проверить поле AE Title на возможность ввода целых положительных цифр + 0">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[132]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="306" name="Проверить поле AE Title на возможность ввода целых отрицательных цифр">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[131]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="310" name="Оставить поле AE Title пустым">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[133]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="312" name="Проверить поле AE Title на возможность ввода спецсимволов">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[134]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="314" name="Проверить поле AE Title на максимальное количество символов">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[135]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="316" name="Проверить поле AE Title на ввод кириллических символов">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[136]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="318" name="Проверить поле AE Title на ввод латинских символов">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[137]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="320" name="Проверить поле AE Title на возможность вставки текста из буфера обмена">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[138]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="322" name="Проверить поле AE Title на возможность вставки файлов из буфера обмена">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[139]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="342" name="Выпадающий список Modality" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="347" name="Проверить возможность раскрытия списка при нажатии на текст внутри него">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[150]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="349" name="Проверить возможность раскрытия списка при нажатии на стрелку">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[151]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="351" name="Проверить возможность написать текст в поле выпадающего списка">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[152]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="353" name="Проверить возможность вставить информацию из буфера обмена в поле выпадающего списка">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[153]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="355" name="Проверить возможность выбрать сразу несколько опций в выпадающем списке">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[154]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite></testsuite><testsuite id="216" name="Строка состояния + кнопки Connect и Delete" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="334" name="Проверить работоспособность кнопки Connect">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[144]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="336" name="Проверить работоспособность кнопки Delete">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[145]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="338" name="Проверить соответствие информации в строке состояния и совершенного действия">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[146]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="340" name="Проверить возможность выделения текста в строке состояния">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[147]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="343" name="Проверить возможность вставить информацию из буфера обмена в строку состояния">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[148]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite></testsuite><testsuite id="121" name="Взаимосвязь с базой данных" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="128" name="Совпадение заголовков таблицы в БД и в приложении">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="122" name="Влияние изменений в БД и их отображение в приложении (Patient list)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Влияние изменений в БД и их отображение в приложении</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Программа запущена. Таблицы сгенерированы.</p>
+
+<p>Запущена программа My SQL Workbench, открыты таблицы Tables-&gt;Patient и&nbsp;Tables-&gt;Worklist.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>В программе My SQL Workbench выбрать таблицу Patient.</p>
+
+<p>Изменить данные у одного из пациентов. Применить изменения</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Изменения применились</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>В программе DBGenerator нажать [Update patient]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Произойдет обновление таблицы с пациентами. У выбранного нами на прошлом шаге пациента изменятся данные в выбранной нами ячейке&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="240" name="Влияние изменений в БД и их отображение в приложении (Work list)">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[104]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="190" name="Закрытие программы" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="191" name="Закрытие программы с помощью кнопки Закрыть">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[89]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="193" name="Закрытие из диспетчера задач">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[90]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="195" name="Закрытие с помощью ALT+F4">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[91]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="197" name="Отключить БД и потом закрыть">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[92]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Отключить БД (эмуляция потери связи) и потом закрыть программу</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Сервер запущен. Соединение с БД установлено. Программа открыта. Таблица с пациентами и исследованиями не сгенерирована</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Отключить&nbsp;сервер</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Сервер отключен</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Сгенерировать 20 пациентов в Patient List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Таблица не генерируется. Появляется сообщение об отсутсвии соединения с БД</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Сгенерировать 20 пациентов в Work List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Таблица не генерируется. Появляется сообщение об отсутсвии соединения с БД</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="199" name="Закрыть без сохранения изменений">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[93]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite><testsuite id="4" name="Удаление программы" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="63" name="Удалить с помощью файла Uninstall.exe">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Удалить с помощью файла Uninstall.exe</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Программа закрыта. Находимся в папке с программой</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Нажать на файл Uninstall.exe</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Откроется окно деинсталлятора</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Проверить наличие кнопок [Delete] и [Cancel]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Кнопки&nbsp;[Delete] и [Cancel] присутствуют</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Нажать [Delete]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Появится окно с подтверждением удаления программы</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>В появившемся окне нажать [Yes]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окно закроется, начнется процесс удаления. По окончании удаления появится окно подтверждающее факт удаления</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Нажать [Finish]</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Окно деинсталлятора закроется</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+
+<testcase internalid="65" name="Возможность удаления программы стандартными средствами ОС">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="69" name="Проверить удаление всех папок, файлов, ярлыков программы">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+
+<testcase internalid="71" name="Проверить удаление записей в реестре ОС">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<platforms/>
+
+</testcase>
+</testsuite></testsuite>
